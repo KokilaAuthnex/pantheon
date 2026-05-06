@@ -3,68 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Pantheon Authenticator</title>
+    <title>Privacy Policy - Pantheon</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
             color: #333;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
+            background-color: #fdfdfd;
         }
-        h1, h2 {
+        h1, h2, h3 {
             color: #2c3e50;
+            margin-top: 1.5em;
         }
         h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
+            border-bottom: 3px solid #eee;
+            padding-bottom: 15px;
+            font-size: 2.2em;
         }
-        .last-updated {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        .highlight {
-            background-color: #f8f9fa;
-            padding: 15px;
+        h2 {
             border-left: 4px solid #2c3e50;
-            margin: 20px 0;
+            padding-left: 15px;
+            font-size: 1.5em;
+            margin-top: 2em;
+        }
+        h3 {
+            font-size: 1.2em;
+            color: #34495e;
+        }
+        .effective-date {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .intro-box {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+            margin-bottom: 30px;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #eee;
+            margin: 40px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-info {
+            background-color: #edf2f7;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-    <p class="last-updated">Last updated: May 5, 2026</p>
 
-    <h2>1. Introduction</h2>
-    <p>We respect your privacy and are committed to protecting it. This Privacy Policy describes the data practices for the <strong>Pantheon Authenticator</strong> application. Our core philosophy is that your security data belongs to you and should remain under your control.</p>
+    <h1>Privacy Policy for Pantheon</h1>
+    <p class="effective-date">Effective Date: May 6, 2026</p>
 
-    <h2>2. Information Collection and Usage</h2>
-    <div class="highlight">
-        <p><strong>No Personal Identification:</strong> We do not collect, store, or transmit personally identifiable information (PII) such as your name, email address, or phone number.</p>
+    <div class="intro-box">
+        <p>Pantheon (“the App”) is developed and maintained by <strong>Authnex Technologies (Private) Limited</strong> (“Authnex”, “we”, “our”, or “us”).</p>
+        <p>This Privacy Policy explains how Pantheon handles your information when you use our mobile application.</p>
     </div>
 
-    <p>To provide its core functionality, the App interacts with your device in the following ways:</p>
+    <hr>
+
+    <h2>1. Information We Collect</h2>
+    <p>Pantheon is designed with privacy and security in mind.</p>
+    
+    <h3>Authentication Data</h3>
+    <p>The App stores authentication secrets and account information locally on your device to generate One-Time Passwords (OTP/TOTP).</p>
+    <p>This may include:</p>
     <ul>
-        <li><strong>Camera Access:</strong> The App requires access to your device camera solely to scan QR codes provided by third-party services to set up TOTP (Time-based One-Time Password) accounts. Images from the camera are processed locally on your device and are never recorded or transmitted.</li>
-        <li><strong>Local Storage:</strong> All account secrets and generated codes are stored locally on your device. We do not host any server-side databases for your credentials, nor do we share this data with third parties.</li>
-        <li><strong>Usage Details:</strong> We may collect non-identifying technical information regarding your device type and operating system version to ensure app compatibility and performance.</li>
+        <li>Account names</li>
+        <li>Issuer/service names</li>
+        <li>TOTP secret keys</li>
+        <li>Configuration data required for authentication</li>
     </ul>
+    <p>These secrets are stored securely on your device and are not shared with third parties unless explicitly stated by the service you are using.</p>
 
-    <h2>3. Data Security</h2>
-    <p>Because your data is stored exclusively on your device, the security of your information relies on your device's own security measures (such as biometrics, passcodes, or encryption). We recommend using built-in device security features to prevent unauthorized physical access to your authenticator codes.</p>
+    <hr>
 
-    <h2>4. Third-Party Services</h2>
-    <p>This App generates codes for third-party services you choose to add. This Privacy Policy does not apply to those third-party services. Please consult the privacy policies of the specific services (e.g., Google, GitHub, etc.) for which you are using Pantheon Authenticator.</p>
+    <h2>2. Camera Permission</h2>
+    <p>Pantheon may request access to your device camera to:</p>
+    <ul>
+        <li>Scan QR codes for account setup</li>
+        <li>Configure TOTP authentication</li>
+    </ul>
+    <p>Camera data is processed locally on your device and is <strong>not uploaded to our servers</strong>.</p>
 
-    <h2>5. Disclosure of Your Information</h2>
-    <p>Since we do not collect personal information, we have no personal data to disclose to third parties, law enforcement, or advertising networks.</p>
+    <hr>
 
-    <h2>6. Changes to Our Privacy Policy</h2>
-    <p>It is our policy to post any changes we make to our privacy policy on this page. If we make material changes, we will notify you through a notice within the App.</p>
+    <h2>3. Internet Access</h2>
+    <p>Pantheon may use internet connectivity for:</p>
+    <ul>
+        <li>Authnex-integrated authentication services</li>
+        <li>Secure communication with supported platforms</li>
+        <li>App updates and service improvements</li>
+    </ul>
+    <p><em>Standard TOTP code generation works offline and does not require internet access.</em></p>
 
-    <h2>7. Contact Information</h2>
-    <p>To ask questions or comment about this privacy policy and our privacy practices, contact us via the app support channels.</p>
+    <hr>
+
+    <h2>4. Data Storage</h2>
+    <p>Authentication data is primarily stored locally on your device. We do not intentionally collect or store:</p>
+    <ul>
+        <li>Your passwords</li>
+        <li>Banking information</li>
+        <li>Personal messages</li>
+        <li>OTP verification codes generated by the App</li>
+    </ul>
+    <p>Users are responsible for maintaining the security of their devices and backups.</p>
+
+    <hr>
+
+    <h2>5. Security</h2>
+    <p>We implement reasonable security measures to protect user information, including:</p>
+    <ul>
+        <li>Secure local storage practices</li>
+        <li>Encrypted communication where applicable</li>
+        <li>Protection against unauthorized access</li>
+    </ul>
+    <p>However, no system can guarantee absolute security.</p>
+
+    <hr>
+
+    <h2>6. Third-Party Services</h2>
+    <p>Pantheon may integrate with third-party platforms or services that support Two-Factor Authentication (2FA). These third-party services operate under their own privacy policies and terms.</p>
+
+    <hr>
+
+    <h2>7. Analytics and Diagnostics</h2>
+    <p>Pantheon may collect limited anonymous technical information to improve app stability and performance, such as:</p>
+    <ul>
+        <li>Crash reports</li>
+        <li>Device model information</li>
+        <li>App version</li>
+        <li>Diagnostic logs</li>
+    </ul>
+    <p>This information does not intentionally identify individual users.</p>
+
+    <hr>
+
+    <h2>8. Children’s Privacy</h2>
+    <p>Pantheon is not directed toward children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+    <hr>
+
+    <h2>9. Your Responsibilities</h2>
+    <p>You are responsible for:</p>
+    <ul>
+        <li>Keeping your device secure</li>
+        <li>Protecting your authentication codes</li>
+        <li>Maintaining backup or recovery methods when supported</li>
+    </ul>
+    <p>Loss of your device may result in loss of access to your authentication accounts.</p>
+
+    <hr>
+
+    <h2>10. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted within the App or through updated publication channels.</p>
+
+    <hr>
+
+    <h2>11. Contact Us</h2>
+    <div class="contact-info">
+        <p>If you have questions regarding this Privacy Policy, you may contact:</p>
+        <p><strong>Authnex Technologies (Private) Limited</strong><br>
+        Email: <a href="mailto:support@authnex.com">support@authnex.com</a></p>
+    </div>
+
+    <hr>
+
+    <h2>12. Consent</h2>
+    <p>By using Pantheon, you agree to this Privacy Policy.</p>
+
 </body>
 </html>
